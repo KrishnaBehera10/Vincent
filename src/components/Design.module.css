@@ -1,0 +1,84 @@
+.main {
+  padding-top: 5vw;
+}
+.box {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  gap: 3vw;
+  grid-template-areas:
+    "a a"
+    "a a"
+    "b b"
+    "b b"
+    "c c"
+    "c c"
+    "d d"
+    "d d"
+    "e e"
+    "e e"
+    "f f"
+    "f f";
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 2vw;
+}
+.img-box:nth-child(1) {
+  grid-area: a;
+}
+.img-box:nth-child(2) {
+  grid-area: b;
+}
+.img-box:nth-child(3) {
+  grid-area: c;
+}
+.img-box:nth-child(4) {
+  grid-area: d;
+}
+.img-box:nth-child(5) {
+  grid-area: e;
+}
+.img-box:nth-child(6) {
+  grid-area: f;
+}
+
+@media (min-width: 425px) {
+  .main .box {
+    gap: 8vw;
+    grid-template-areas:
+      "a a . ."
+      "a a b b"
+      "a a . ."
+      "c c d d"
+      "c c d d"
+      ". . d d"
+      "e e f f"
+      "e e f f"
+      "e e f f"
+      ". . f f"
+      ". . f f";
+  }
+}
+
+@media (min-width: 768px) {
+  .main .box {
+    gap: 12vw;
+    grid-template-areas:
+      "a a . ."
+      "a a b b"
+      "a a . ."
+      "c c d d"
+      "c c d d"
+      ". . d d"
+      "e e f f"
+      "e e f f"
+      "e e f f"
+      ". . f f"
+      ". . f f";
+  }
+}

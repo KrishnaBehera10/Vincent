@@ -1,0 +1,25 @@
+.main {
+  width: 100%;
+  display: flex;
+  margin: 5vh 0;
+}
+
+.main h1 {
+  font-size: 5vw;
+  text-transform: uppercase;
+  line-height: 6vw;
+  width: 80%;
+}
+.main p {
+  font-size: 1.8vw;
+  text-transform: uppercase;
+  width: 80%;
+  padding-top: 2vw;
+}
+
+@media (min-width: 768px) {
+  .main {
+    align-items: center;
+    height: 100vh;
+  }
+}

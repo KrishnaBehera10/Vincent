@@ -1,0 +1,10 @@
+.header {
+  width: 100%;
+}
+.h1 {
+  font-size: 6vw;
+  text-transform: uppercase;
+  margin-top: 8vw;
+
+  width: 60vw;
+}
