@@ -1,11 +1,13 @@
 import css from "./Footer.module.css";
 
+import image from "../../public/image/Rectangle 2.png";
+
 function Footer() {
   return (
     <div className={css.main}>
       <div className={css.container}>
         <div className={css.left}>
-          <img src="./public/image/Rectangle 2.png" alt="" />
+          <img src={image} alt="" />
         </div>
         <div className={css.right}>
           <div className={css.info}>
